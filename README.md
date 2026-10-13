@@ -138,8 +138,8 @@ The app classes only call these public methods. All line logic (priorities, posi
 | `BidTest.java` | Tyler | Wrote manually, checked by GenAI (Claude) |
 | `WaitlistTest.java` | Tyler | Wrote and got edge cases from GenAI (Claude) |
 | `LedgerTest.java` | Jonathan | Wrote manually and checked with GenAI (Claude) |
-| `AuctionTest.java` | Jonathan | Written and checked |
-| `InputValidatorTest.java` | Nana | Written from our test plan |
+| `AuctionTest.java` | Jonathan | Written manually and checked by GenAI |
+| `InputValidatorTest.java` | Nana | Wrote based on our test plan |
 | `GrubQueueAppTest.java` | Tyler | GenAI-drafted (Claude), finished and reviewed by Tyler |
 | `README.md` | Tyler | First draft by GenAI (Claude), edited and finalized by Tyler |
 
