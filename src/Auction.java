@@ -4,7 +4,7 @@
  * When it closes, Waitlist swaps the two parties' priority numbers and Ledger
  * records the transfer; GrubQueueApp coordinates that.
  *
- * @author Tyler Santiago
+ * @author Jonathan Davis
  * @version October 2026
  */
 public class Auction

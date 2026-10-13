@@ -4,7 +4,7 @@
  * reports invalid input by returning INVALID (for numbers) or null (for names).
  * No method throws on bad input, so the console app can simply re-prompt.
  *
- * @author Tyler Santiago
+ * @author Nana Ababio
  * @version October 2026
  */
 public final class InputValidator

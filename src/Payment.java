@@ -4,7 +4,7 @@
  * the transaction type ("skip" or "auction"). Payment does not override equals,
  * so two identical $4 payments are still two separate records in the Ledger.
  *
- * @author Tyler Santiago
+ * @author Nana Ababio
  * @version October 2026
  */
 public class Payment

@@ -3,7 +3,7 @@
  * (two $4 skips are two real payments), which is why a bag-style chain fits
  * here.
  *
- * @author Tyler Santiago
+ * @author Jonathan Davis
  * @version October 2026
  */
 public class Ledger

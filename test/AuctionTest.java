@@ -11,7 +11,7 @@ import org.junit.Test;
 /**
  * Tests for Auction. The seller is ticket 1.
  *
- * @author Tyler Santiago
+ * @author Jonathan Davis
  * @version October 2026
  */
 public class AuctionTest

@@ -9,7 +9,7 @@ import org.junit.Test;
  * Tests for Payment. Bad input for the getters is tested through the
  * constructor, which refuses to build a payment with invalid data.
  *
- * @author Tyler Santiago
+ * @author Nana Ababio
  * @version October 2026
  */
 public class PaymentTest

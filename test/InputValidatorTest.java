@@ -7,7 +7,7 @@ import org.junit.Test;
  * Tests for InputValidator. Rejected numbers come back as
  * InputValidator.INVALID; rejected names come back as null.
  *
- * @author Tyler Santiago
+ * @author Nana Ababio
  * @version October 2026
  */
 public class InputValidatorTest

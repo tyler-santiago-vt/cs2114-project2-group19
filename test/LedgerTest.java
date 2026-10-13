@@ -9,7 +9,7 @@ import org.junit.Test;
 /**
  * Tests for Ledger.
  *
- * @author Tyler Santiago
+ * @author Jonathan Davis
  * @version October 2026
  */
 public class LedgerTest
