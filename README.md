@@ -136,7 +136,7 @@ The app classes only call these public methods. All line logic (priorities, posi
 | `WaitlistEntryTest.java` | Tyler | Wrote manually then checked by GenAI |
 | `PaymentTest.java` | Nana | Manually wrote, checked by GenAI (Claude) |
 | `BidTest.java` | Tyler | Wrote manually, checked by GenAI (Claude) |
-| `WaitlistTest.java` | Tyler | Wrote |
+| `WaitlistTest.java` | Tyler | Wrote and got edge cases from GenAI (Claude) |
 | `LedgerTest.java` | Jonathan | Wrote manually and checked with GenAI (Claude) |
 | `AuctionTest.java` | Jonathan | Written and checked |
 | `InputValidatorTest.java` | Nana | Written from our test plan |
