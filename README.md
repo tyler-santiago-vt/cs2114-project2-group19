@@ -98,17 +98,15 @@ The app classes only call these public methods. All line logic (priorities, posi
 
 | # | Item | Owner |
 |---|---|---|
-| 1 | Every member walks through each class and test file so we can all defend it, including stating the Big-O table above | All |
-| 2 | When an auction closes, fall back to the next-highest bid if the winner can't complete the trade | Tyler |
-| 3 | Add a restaurant PIN check before the restaurant menu opens | Nana |
-| 4 | Fix anything raised in Deliverable 3 grading feedback | Jonathan |
-| 5 | Prepare the Deliverable 4 presentation and write-up | All |
+| 1 | When an auction closes, fall back to the next-highest bid if the winner can't complete the trade | Tyler |
+| 2 | Add a restaurant PIN check before the restaurant menu opens | Nana |
+| 3 | Fix anything raised in Deliverable 3 grading feedback | Jonathan |
 
 ### Stretch goals
 
 | Stretch goal (from scope) | Status |
 |---|---|
-| Spot auctions (`Auction`, `Bid`, `LinkedChain<Bid>`) | **Committed. Working in this prototype.** Item 2 above finishes it. |
+| Spot auctions (`Auction`, `Bid`, `LinkedChain<Bid>`) | **Committed. Working in this prototype.** Item 1 above finishes it. |
 | Show wallet balance (scope add-on) | **Committed. Done.** The balance prints after joining, skipping, bidding, and selling. |
 | More than one auction at a time | **Dropped.** It would need a `LinkedChain<Auction>` and changes to every auction menu option, which we don't need for the MVP. |
 
