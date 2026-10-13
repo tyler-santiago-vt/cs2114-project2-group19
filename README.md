@@ -140,4 +140,4 @@ The app classes only call these public methods. All line logic (priorities, posi
 | `README.md` | Tyler | First draft by GenAI (Claude), edited and finalized by Tyler |
 
 ### GenAI Note
-GenAI was used for helping us make first drafts, making sure the appropriate test cases were covered, making sure no requirements were missed from the instructions, and assisted in writing the `README.md`
+GenAI was used for helping us make first drafts, making sure the appropriate test cases were covered, making sure no requirements were missed from the instructions, and assisted in formatting the `README.md`
