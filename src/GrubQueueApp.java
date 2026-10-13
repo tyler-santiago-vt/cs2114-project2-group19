@@ -587,3 +587,162 @@ public class GrubQueueApp
             if (name != null)
             {
                 return name;
+            }
+            out.println(
+                "Name must be 1 to " + InputValidator.MAX_NAME_LENGTH
+                    + " characters and not blank.");
+        }
+    }
+
+
+    /**
+     * Reads a valid party size.
+     *
+     * @return the party size
+     */
+    private int promptPartySize()
+    {
+        while (true)
+        {
+            int size = InputValidator
+                .validatePartySize(readLine("Enter your party size: "));
+            if (size != InputValidator.INVALID)
+            {
+                return size;
+            }
+            out.println(
+                "Party size must be a whole number from "
+                    + InputValidator.MIN_PARTY_SIZE + " to "
+                    + InputValidator.MAX_PARTY_SIZE + ".");
+        }
+    }
+
+
+    /**
+     * Reads a valid starting wallet balance (zero allowed).
+     *
+     * @return the balance in cents
+     */
+    private int promptBalance()
+    {
+        while (true)
+        {
+            int cents = InputValidator.validateBalance(
+                readLine(
+                    "How much money to load into your wallet? "
+                        + "(e.g. 20 or 6.50): "));
+            if (cents != InputValidator.INVALID)
+            {
+                return cents;
+            }
+            out.println(
+                "Enter an amount from $0.00 to "
+                    + formatCents(InputValidator.MAX_MONEY_CENTS)
+                    + ", like 20 or 6.50.");
+        }
+    }
+
+
+    /**
+     * Reads a valid payment or bid amount (must be positive).
+     *
+     * @param prompt
+     *            the text to show
+     * @return the amount in cents
+     */
+    private int promptMoney(String prompt)
+    {
+        while (true)
+        {
+            int cents = InputValidator.validateMoney(readLine(prompt));
+            if (cents != InputValidator.INVALID)
+            {
+                return cents;
+            }
+            out.println(
+                "Amounts must be positive and at most "
+                    + formatCents(InputValidator.MAX_MONEY_CENTS)
+                    + ", like 4 or 4.00.");
+        }
+    }
+
+
+    /**
+     * Reads a ticket number in a valid format.
+     *
+     * @return the ticket number
+     */
+    private int promptTicket()
+    {
+        while (true)
+        {
+            int ticket = InputValidator
+                .validateTicketNumber(readLine("Enter the ticket number: "));
+            if (ticket != InputValidator.INVALID)
+            {
+                return ticket;
+            }
+            out.println(
+                "Ticket numbers are positive whole numbers, " + "like 12.");
+        }
+    }
+
+    // ---------------------------------------------------------------
+    // Helpers
+    // ---------------------------------------------------------------
+
+
+    /**
+     * Prints a prompt and reads one line.
+     *
+     * @param prompt
+     *            the text to show
+     * @return the line typed
+     * @throws EndOfInputException
+     *             if there is no more input
+     */
+    private String readLine(String prompt)
+    {
+        out.print(prompt);
+        if (!in.hasNextLine())
+        {
+            throw new EndOfInputException();
+        }
+        return in.nextLine();
+    }
+
+
+    /**
+     * Returns "1 party" or "N parties".
+     *
+     * @param count
+     *            the number of parties
+     * @return the count with the right noun
+     */
+    private static String parties(int count)
+    {
+        return count + (count == 1 ? " party" : " parties");
+    }
+
+
+    /**
+     * Formats cents as dollars, e.g. 650 becomes "$6.50".
+     *
+     * @param cents
+     *            a non-negative amount in cents
+     * @return the formatted amount
+     */
+    private static String formatCents(int cents)
+    {
+        return String.format("$%d.%02d", cents / 100, cents % 100);
+    }
+
+    /**
+     * Signals that input ran out, so run() can end cleanly instead of crashing.
+     */
+    private static class EndOfInputException
+        extends RuntimeException
+    {
+        private static final long serialVersionUID = 1L;
+    }
+}
